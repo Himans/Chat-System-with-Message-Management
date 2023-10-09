@@ -1,59 +1,81 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
+<!-- style.css -->
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
 }
 
 #chat-window {
-    max-height: 300px;
-    overflow-y: scroll;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #chat-window div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-form input[type="text"] {
-    width: 80%;
-    padding: 5px;
+.message-buttons {
+  display: inline-block;
+  margin-left: 10px;
 }
 
-form input[type="submit"] {
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.message-buttons input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #45a049;
+.message-buttons input[type="submit"] {
+  padding: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
-form input[type="submit"]:focus {
-    outline: none;
+.message-buttons input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-form input[type="text"]:focus {
-    outline: none;
+.message-buttons input[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
